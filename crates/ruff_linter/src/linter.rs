@@ -1078,6 +1078,15 @@ mod tests {
         def f2():
             global c
             c: list[str] = []
+        
+        d: int = 1
+        def f3():
+            global d
+            d: str
+        
+        e: int = 1
+        def f4():
+            e: str = 'whatever'
         ",
         PythonVersion::PY310,
         "AnnotatedGlobal"
