@@ -1087,6 +1087,9 @@ mod tests {
         e: int = 1
         def f4():
             e: str = 'whatever'
+
+        global f
+        f: int
         ",
         PythonVersion::PY310,
         "AnnotatedGlobal"
